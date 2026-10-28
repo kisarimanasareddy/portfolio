@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <h2 class="logo">My Portfolio</h2>
+
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </div>
+
+        <button id="darkBtn" onclick="darkMode()">Dark Mode</button>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home">
+        <h1>Hi, I'm Manasa!</h1>
+        <h2 id="role">Student Developer</h2>
+
+        <p>I love learning programming and building websites.</p>
+
+        <button onclick="welcomeMessage()">Say Hello</button>
+        <button onclick="changeText()">Show My Skills</button>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Me</h2>
+
+        <p>
+            I am a student interested in web development,
+            programming, and machine learning.
+            I enjoy learning new technologies and creating projects.
+        </p>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2>My Skills</h2>
+
+        <div class="skills-container">
+            <div class="card">HTML</div>
+            <div class="card">CSS</div>
+            <div class="card">JavaScript</div>
+            <div class="card">Python</div>
+            <div class="card">React</div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>My Projects</h2>
+
+        <div class="projects-container">
+
+            <div class="card project">
+                <h3>Portfolio Website</h3>
+                <p>A personal website created using HTML, CSS, and JavaScript.</p>
+            </div>
+
+            <div class="card project">
+                <h3>Learning Path Generator</h3>
+                <p>A project that helps students discover learning topics.</p>
+            </div>
+
+            <div class="card project">
+                <h3>Machine Learning</h3>
+                <p>A project exploring machine learning algorithms.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+
+        <form id="contactForm">
+            <input
+                type="text"
+                id="name"
+                placeholder="Enter your name"
+                required
+            >
+
+            <input
+                type="email"
+                id="email"
+                placeholder="Enter your email"
+                required
+            >
+
+            <textarea
+                id="message"
+                placeholder="Enter your message"
+                required
+            ></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; <span id="year"></span> Manasa | My Portfolio</p>
+    </footer>
+
+    <!-- JavaScript Connection -->
+    <script src="script.js"></script>
+
+</body>
+</html>

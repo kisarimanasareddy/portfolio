@@ -1,0 +1,211 @@
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f9;
+    color: #222;
+    line-height: 1.6;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Navigation */
+nav {
+    background-color: #222;
+    color: white;
+    padding: 18px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.logo {
+    color: #61dafb;
+}
+
+.nav-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #61dafb;
+}
+
+/* Buttons */
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 11px 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Sections */
+section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+section h2 {
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+
+section p {
+    max-width: 700px;
+    margin: 10px auto;
+}
+
+/* Home */
+#home {
+    background-color: #dceeff;
+    padding: 100px 20px;
+}
+
+#home h1 {
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+
+#home h2 {
+    color: #007bff;
+}
+
+/* Skills and Projects */
+.skills-container,
+.projects-container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 1000px;
+    margin: 25px auto 0;
+}
+
+.card {
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    width: 200px;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.project {
+    width: 280px;
+}
+
+/* Contact Form */
+#contactForm {
+    max-width: 500px;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+}
+
+textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+#contactForm button {
+    align-self: center;
+}
+
+/* Footer */
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Dark Mode */
+body.dark-mode {
+    background-color: #181818;
+    color: #f4f4f4;
+}
+
+body.dark-mode #home {
+    background-color: #292929;
+}
+
+body.dark-mode #home h2 {
+    color: #61dafb;
+}
+
+body.dark-mode .card {
+    background-color: #303030;
+    color: white;
+}
+
+body.dark-mode input,
+body.dark-mode textarea {
+    background-color: #303030;
+    color: white;
+    border-color: #555;
+}
+
+body.dark-mode input::placeholder,
+body.dark-mode textarea::placeholder {
+    color: #ccc;
+}
+
+/* Mobile Screen */
+@media (max-width: 700px) {
+    nav {
+        flex-direction: column;
+    }
+
+    .nav-links {
+        justify-content: center;
+    }
+
+    #home h1 {
+        font-size: 32px;
+    }
+
+    .card,
+    .project {
+        width: 100%;
+        max-width: 350px;
+    }
+}
